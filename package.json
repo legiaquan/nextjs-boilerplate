@@ -14,9 +14,14 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "@ant-design/nextjs-registry": "^1.0.1",
+    "antd": "^5.20.1",
     "next": "14.2.5",
+    "next-intl": "^3.17.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "styled-components": "^6.1.12"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
