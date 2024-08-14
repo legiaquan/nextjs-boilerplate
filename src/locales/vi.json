@@ -1,6 +1,7 @@
 {
-  "home": {
-    "welcome": "Chào mừng",
-    "hello": "Xin chào {name}"
+  "SignUp": {
+    "title": "Đăng ký",
+    "meta_title": "Sign up",
+    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
   }
 }

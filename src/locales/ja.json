@@ -1,6 +1,7 @@
 {
-  "home": {
-    "welcome": "ようこそ",
-    "hello": "こんにちは {name}"
+  "SignUp": {
+    "title": "Sign Up",
+    "meta_title": "Sign up",
+    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
   }
 }

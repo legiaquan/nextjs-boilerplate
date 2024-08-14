@@ -3,9 +3,10 @@ import '../globals.css';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
-import { AppConfig } from '@/utils/AppConfigs';
+import { AppConfig } from '@/utils/AppConfig';
 
 // Define the type for the props
 interface LocaleLayoutProps {
@@ -23,6 +24,7 @@ export default function LocaleLayout({
   children,
   params: { locale },
 }: LocaleLayoutProps) {
+  unstable_setRequestLocale(locale);
   // Validate that the incoming `locale` parameter is valid
   if (!AppConfig.locales.includes(locale)) {
     notFound();
