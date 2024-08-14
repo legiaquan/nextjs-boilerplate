@@ -39,4 +39,3 @@ next-env.d.ts
 /.husky/_
 
 .env
-package-lock.json
