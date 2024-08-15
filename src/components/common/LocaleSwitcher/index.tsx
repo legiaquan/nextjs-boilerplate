@@ -4,6 +4,7 @@ import { useLocale } from 'next-intl';
 import type { ChangeEventHandler } from 'react';
 
 import { usePathname, useRouter } from '@/libs/i18nNavigation';
+import type { LocaleEnum } from '@/utils/AppConfig';
 import { AppConfig } from '@/utils/AppConfig';
 
 export default function LocaleSwitcher() {
@@ -12,7 +13,7 @@ export default function LocaleSwitcher() {
   const locale = useLocale();
 
   const handleChange: ChangeEventHandler<HTMLSelectElement> = (event) => {
-    router.push(pathname, { locale: event.target.value });
+    router.push(pathname, { locale: event.target.value as LocaleEnum });
     router.refresh();
   };
 
