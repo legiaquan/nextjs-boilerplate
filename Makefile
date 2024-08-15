@@ -41,6 +41,12 @@ prettier:
 		--use-tabs false \
 		--write .
 
+# config git
+git-config:
+	git config core.autocrlf false
+	git rm --cached -r .
+	git reset --hard
+
 lint: eslint prettier
 # Combined pre-commit checks
 pre-commit: pull-code eslint check-types prettier
