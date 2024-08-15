@@ -13,15 +13,19 @@ e.g. #22
 ## Description
 
 ## What I did
+
 <!-- Write about what you did within this PR. -->
 
 ## What I didn't do
+
 <!-- Write about what you have not done within this PR. -->
 
 ## UI before / after
+
 <!-- If the UI or behavior changes, share before/after screenshots or videos. -->
 
 ## Test
+
 <!-- Write test items and test methods. -->
 
 ## Review perspective

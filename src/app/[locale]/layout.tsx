@@ -1,17 +1,20 @@
 import '../globals.css';
 
 import { AntdRegistry } from '@ant-design/nextjs-registry';
+import { ConfigProvider } from 'antd';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import React from 'react';
 
-import { AppConfig } from '@/utils/AppConfig';
+import GlobalStyle from '@/templates/styles/GlobalStyle';
+import type { LocaleEnum } from '@/utils/AppConfig';
+import { AppConfig, LocaleProviderAnt } from '@/utils/AppConfig';
 
 // Define the type for the props
 interface LocaleLayoutProps {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: LocaleEnum };
 }
 
 export function generateStaticParams() {
@@ -34,9 +37,15 @@ export default function LocaleLayout({
   return (
     <html lang={locale}>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <body>
-          <AntdRegistry>{children}</AntdRegistry>
-        </body>
+        <GlobalStyle>
+          <body>
+            <AntdRegistry>
+              <ConfigProvider locale={LocaleProviderAnt(locale)}>
+                {children}
+              </ConfigProvider>
+            </AntdRegistry>
+          </body>
+        </GlobalStyle>
       </NextIntlClientProvider>
     </html>
   );

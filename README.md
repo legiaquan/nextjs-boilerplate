@@ -10,10 +10,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 **Note:**
 Install `make`:
+
 - Windows:
-    [Install make with Chocolatey](https://community.chocolatey.org/packages/make)
+  [Install make with Chocolatey](https://community.chocolatey.org/packages/make)
 - MacOS:
-    Install make via Homebrew with `brew install make`
+  Install make via Homebrew with `brew install make`
 
 #### The development server:
 
