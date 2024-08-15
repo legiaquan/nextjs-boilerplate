@@ -1,6 +1,6 @@
 {
   "name": "nextjs-boilerplate",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,7 @@
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "commit": "cz",
     "check-types": "tsc --noEmit --pretty",
+    "check-node-version": "node -e \"const v = process.version.slice(1).split('.').map(Number); if (v[0] < 20) { console.error('Node.js version must be >= 20'); process.exit(1); }\"",
     "prepare": "husky"
   },
   "dependencies": {

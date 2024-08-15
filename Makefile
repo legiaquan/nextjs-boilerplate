@@ -7,6 +7,13 @@ else
     RMDIR = rm -rf
 endif
 
+# Install dependencies
+i: install
+install:
+	@make check-node-version
+	@echo "Running npm install"
+	npm install
+
 # Target for running ESLint with auto-fix
 eslint:
 	npx eslint --fix .
@@ -14,6 +21,12 @@ eslint:
 # Target for checking TypeScript types
 check-types:
 	npm run check-types
+
+check-node-version:
+	npm run check-node-version
+
+pull-code:
+	git pull
 
 # Target for formatting code with Prettier
 prettier:
@@ -30,16 +43,12 @@ prettier:
 
 lint: eslint prettier
 # Combined pre-commit checks
-pre-commit: eslint check-types prettier
+pre-commit: pull-code eslint check-types prettier
 
 # Initialize the project (example placeholder)
-init:
-	@make install
 
-# Install dependencies
-install:
-	@echo "Running npm install"
-	npm install
+init: install
+
 
 # Reinstall dependencies and clean up
 re-install: clean install
