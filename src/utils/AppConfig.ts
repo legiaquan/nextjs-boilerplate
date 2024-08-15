@@ -17,6 +17,11 @@ export const AppConfig = {
   locales: [LocaleEnum.en, LocaleEnum.vi, LocaleEnum.ja],
   defaultLocale: LocaleEnum.en,
   localePrefix,
+  timeZoneMap: {
+    [LocaleEnum.en]: 'America/Los_Angeles',
+    [LocaleEnum.vi]: 'Asia/Ho_Chi_Minh',
+    [LocaleEnum.ja]: 'Asia/Tokyo',
+  },
 };
 
 export const LocaleProviderAnt = (locale: LocaleEnum) => {
