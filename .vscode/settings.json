@@ -1,3 +1,4 @@
 {
-  "cSpell.language": "en,vi,ja"
+  "cSpell.language": "en,vi,ja",
+  "i18n-ally.localesPaths": ["src/locales"]
 }
