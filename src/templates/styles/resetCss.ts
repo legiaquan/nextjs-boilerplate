@@ -13,10 +13,10 @@ export const resetCss = css`
 
   body {
     font-family: var(--font-family);
-    font-size: 1.6rem;
+    font-size: 1rem;
     line-height: 1.5;
     text-rendering: optimizespeed;
-    height: 200vh;
+    /* height: 200vh; */
     overflow-y: overlay;
   }
 

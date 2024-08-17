@@ -1,10 +1,9 @@
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata(props: { params: { locale: string } }) {
   const t = await getTranslations({
     locale: props.params.locale,
-    namespace: 'SignUp',
+    namespace: 'SignIn',
   });
 
   return {
@@ -13,14 +12,11 @@ export async function generateMetadata(props: { params: { locale: string } }) {
   };
 }
 
-const Login = () => {
-  const t = useTranslations('SignUp');
+const SignInPage = (props: { params: { locale: string } }) => (
+  <>
+    Sign In
+    {props.params.locale}
+  </>
+);
 
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {t('title')}
-    </main>
-  );
-};
-
-export default Login;
+export default SignInPage;

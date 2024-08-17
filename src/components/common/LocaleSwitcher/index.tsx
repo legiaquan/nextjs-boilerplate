@@ -1,7 +1,9 @@
 'use client';
 
+import { GlobalOutlined } from '@ant-design/icons';
+import type { MenuProps } from 'antd';
+import { Button, Dropdown } from 'antd';
 import { useLocale } from 'next-intl';
-import type { ChangeEventHandler } from 'react';
 
 import { usePathname, useRouter } from '@/libs/i18nNavigation';
 import type { LocaleEnum } from '@/utils/AppConfig';
@@ -12,24 +14,22 @@ export default function LocaleSwitcher() {
   const pathname = usePathname();
   const locale = useLocale();
 
-  const handleChange: ChangeEventHandler<HTMLSelectElement> = (event) => {
-    router.push(pathname, { locale: event.target.value as LocaleEnum });
+  const handleMenuClick = ({ key }: { key: string }): void => {
+    const newLocale = key as LocaleEnum; // Cast key to LocaleEnum
+    router.push(pathname, { locale: newLocale });
     router.refresh();
   };
 
+  const items: MenuProps['items'] = AppConfig.locales.map((elt) => ({
+    key: elt,
+    label: elt.toUpperCase(),
+  }));
+
   return (
-    <select
-      id="locale" // Ensure this id matches the htmlFor in the label
-      name="locale"
-      defaultValue={locale}
-      onChange={handleChange}
-      className="border border-gray-300 font-medium focus:outline-none focus-visible:ring"
-    >
-      {AppConfig.locales.map((elt) => (
-        <option key={elt} value={elt}>
-          {elt.toUpperCase()}
-        </option>
-      ))}
-    </select>
+    <Dropdown menu={{ items, onClick: handleMenuClick }} trigger={['click']}>
+      <Button icon={<GlobalOutlined />} className="flex items-center">
+        {locale.toUpperCase()}
+      </Button>
+    </Dropdown>
   );
 }

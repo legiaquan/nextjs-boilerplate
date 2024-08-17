@@ -1,62 +1,36 @@
-import Link from 'next/link';
-import { unstable_setRequestLocale } from 'next-intl/server';
+// import { ClerkProvider } from "@clerk/nextjs";
 
-import LocaleSwitcher from '@/components/common/LocaleSwitcher';
-import { BaseTemplate } from '@/templates/BaseTemplate';
+// import enUS from 'antd/es/calendar/locale/en_US';
+// import jaJP from 'antd/es/calendar/locale/ja_JP';
 
-export default function Layout(props: {
+// import { AppConfig } from '@/utils/AppConfig';
+
+export default function AuthLayout(props: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  unstable_setRequestLocale(props.params.locale);
+  // let clerkLocale = enUS;
+  // let signInUrl = '/sign-in';
+  // let signUpUrl = '/sign-up';
+  // let dashboardUrl = '/dashboard';
 
-  return (
-    <BaseTemplate
-      leftNav={
-        <>
-          <li>
-            <Link
-              href="/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              News
-            </Link>
-          </li>
-        </>
-      }
-      rightNav={
-        <>
-          <li>
-            <Link
-              href="/sign-up/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              Sign up
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/sign-in/"
-              className="border-none text-gray-700 hover:text-gray-900"
-            >
-              Sign In
-            </Link>
-          </li>
-          <li>
-            <LocaleSwitcher />
-          </li>
-        </>
-      }
-    >
-      <div className="py-5 text-xl [&_p]:my-6">{props.children}</div>
-    </BaseTemplate>
-  );
+  // if (props.params.locale === 'ja') {
+  //   clerkLocale = jaJP;
+  // }
+
+  // if (props.params.locale !== AppConfig.defaultLocale) {
+  //   signInUrl = `/${props.params.locale}${signInUrl}`;
+  //   signUpUrl = `/${props.params.locale}${signUpUrl}`;
+  //   dashboardUrl = `/${props.params.locale}${dashboardUrl}`;
+  // }
+
+  return props.children;
+  //   <ClerkProvider
+  //     localization={clerkLocale}
+  //     signInUrl={signInUrl}
+  //     signUpUrl={signUpUrl}
+  //     signInFallbackRedirectUrl={dashboardUrl}
+  //     signUpFallbackRedirectUrl={dashboardUrl}
+  //   >
+  // </ClerkProvider>
 }
