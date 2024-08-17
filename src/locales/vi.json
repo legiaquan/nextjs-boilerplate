@@ -1,7 +1,59 @@
 {
+  "RootLayout": {
+    "home_link": "Trang chủ",
+    "about_link": "Về chúng tôi",
+    "guestbook_link": "Sổ khách",
+    "portfolio_link": "Danh mục",
+    "sign_in_link": "Đăng nhập",
+    "sign_up_link": "Đăng ký"
+  },
+  "BaseTemplate": {
+    "description": "Mã khởi đầu cho Nextjs Boilerplate với Tailwind CSS, Ant Design",
+    "made_with": "Được tạo ra bằng"
+  },
+  "Index": {
+    "meta_title": "Giới thiệu Next.js Boilerplate",
+    "meta_description": "Next.js Boilerplate là mã khởi đầu hoàn hảo cho dự án của bạn. Xây dựng ứng dụng React của bạn với framework Next.js."
+  },
+  "About": {
+    "meta_title": "Về chúng tôi",
+    "meta_description": "Mô tả trang về chúng tôi",
+    "about_paragraph": "Chào mừng bạn đến với trang 'Về chúng tôi' của chúng tôi! Chúng tôi là một đội ngũ những người đam mê, tận tâm tạo ra phần mềm tuyệt vời.",
+    "translation_powered_by": "Dịch thuật cung cấp bởi"
+  },
+  "Portfolio": {
+    "meta_title": "Danh mục",
+    "meta_description": "Chào mừng bạn đến với trang danh mục của tôi!",
+    "presentation": "Chào mừng bạn đến với trang danh mục của tôi! Tại đây bạn sẽ tìm thấy một bộ sưu tập công việc và thành tích của tôi được chọn lọc kỹ lưỡng. Qua danh mục này, tôi muốn thể hiện chuyên môn, sự sáng tạo và giá trị mà tôi có thể mang lại cho các dự án của bạn.",
+    "portfolio_name": "Danh mục {name}",
+    "error_reporting_powered_by": "Báo cáo lỗi cung cấp bởi",
+    "coverage_powered_by": "Độ bao phủ mã cung cấp bởi"
+  },
+  "PortfolioSlug": {
+    "meta_title": "Danh mục {slug}",
+    "meta_description": "Mô tả danh mục {slug}",
+    "header": "Danh mục {slug}",
+    "content": "Đã tạo một bộ tài liệu quảng cáo và yếu tố thương hiệu cho một sự kiện doanh nghiệp. Đã thiết kế một chủ đề thống nhất về mặt hình ảnh, bao gồm logo, áp phích, banner và tài sản kỹ thuật số. Kết hợp bản sắc thương hiệu của khách hàng đồng thời kết hợp phương pháp tiếp cận hiện đại và sáng tạo. Đã nhận được phản hồi tích cực từ người tham dự sự kiện, dẫn đến một sự kiện thành công với sự tham gia cao hơn và tăng cường khả năng nhận diện thương hiệu.",
+    "log_management_powered_by": "Quản lý nhật ký cung cấp bởi"
+  },
+  "SignIn": {
+    "meta_title": "Đăng nhập",
+    "meta_description": "Đăng nhập vào tài khoản của bạn một cách dễ dàng với quy trình đăng nhập thân thiện với người dùng của chúng tôi."
+  },
   "SignUp": {
-    "title": "Đăng ký",
-    "meta_title": "Sign up",
-    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
+    "meta_title": "Đăng ký",
+    "meta_description": "Tạo tài khoản một cách dễ dàng thông qua quy trình đăng ký trực quan của chúng tôi."
+  },
+  "Dashboard": {
+    "meta_title": "Bảng điều khiển",
+    "hello_message": "Chào {email}!"
+  },
+  "UserProfile": {
+    "meta_title": "Hồ sơ người dùng"
+  },
+  "DashboardLayout": {
+    "dashboard_link": "Bảng điều khiển",
+    "user_profile_link": "Quản lý tài khoản của bạn",
+    "sign_out": "Đăng xuất"
   }
 }

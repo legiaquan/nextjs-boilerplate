@@ -1,7 +1,59 @@
 {
+  "RootLayout": {
+    "home_link": "ホーム",
+    "about_link": "私たちについて",
+    "guestbook_link": "ゲストブック",
+    "portfolio_link": "ポートフォリオ",
+    "sign_in_link": "サインイン",
+    "sign_up_link": "サインアップ"
+  },
+  "BaseTemplate": {
+    "description": "Ant Design,Tailwind CSS を使用した Nextjs ボイラープレートのスターターコード",
+    "made_with": "作成者"
+  },
+  "Index": {
+    "meta_title": "Next.js ボイラープレート プレゼンテーション",
+    "meta_description": "Next.js ボイラープレートはプロジェクトの完璧なスターターコードです。Next.js フレームワークを使用して React アプリケーションを構築してください。"
+  },
+  "About": {
+    "meta_title": "私たちについて",
+    "meta_description": "私たちについてページの説明",
+    "about_paragraph": "私たちの「私たちについて」ページへようこそ！私たちは、素晴らしいソフトウェアを作成することに情熱を注いでいるチームです。",
+    "translation_powered_by": "翻訳提供"
+  },
+  "Portfolio": {
+    "meta_title": "ポートフォリオ",
+    "meta_description": "私のポートフォリオページへようこそ！",
+    "presentation": "私のポートフォリオページへようこそ！ここでは、私の仕事と成果物を慎重に選んだコレクションをご覧いただけます。このポートフォリオを通じて、私の専門知識、創造性、そしてあなたのプロジェクトに対する価値を示したいと考えています。",
+    "portfolio_name": "ポートフォリオ {name}",
+    "error_reporting_powered_by": "エラーレポート提供",
+    "coverage_powered_by": "コードカバレッジ提供"
+  },
+  "PortfolioSlug": {
+    "meta_title": "ポートフォリオ {slug}",
+    "meta_description": "ポートフォリオ {slug} の説明",
+    "header": "ポートフォリオ {slug}",
+    "content": "企業イベントのために一連のプロモーション資料とブランディング要素を作成しました。ロゴ、ポスター、バナー、デジタル資産を含む視覚的に統一されたテーマを作成しました。クライアントのブランドアイデンティティを統合しながら、現代的で革新的なアプローチを取り入れました。イベントの参加者から好意的な反応を得て、参加者のエンゲージメントが向上し、ブランドの可視性が増しました。",
+    "log_management_powered_by": "ログ管理提供"
+  },
+  "SignIn": {
+    "meta_title": "サインイン",
+    "meta_description": "ユーザーフレンドリーなログインプロセスでアカウントにシームレスにサインインしてください。"
+  },
   "SignUp": {
-    "title": "Sign Up",
-    "meta_title": "Sign up",
-    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
+    "meta_title": "サインアップ",
+    "meta_description": "直感的なサインアッププロセスでアカウントを簡単に作成できます。"
+  },
+  "Dashboard": {
+    "meta_title": "ダッシュボード",
+    "hello_message": "こんにちは {email} さん！"
+  },
+  "UserProfile": {
+    "meta_title": "ユーザープロファイル"
+  },
+  "DashboardLayout": {
+    "dashboard_link": "ダッシュボード",
+    "user_profile_link": "アカウントを管理",
+    "sign_out": "サインアウト"
   }
 }
