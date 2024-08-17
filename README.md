@@ -53,9 +53,17 @@ Built-in feature from Next.js:
 
 Run the following command on your local environment:
 
-```shell
-make install
+```bash
+    make init
 ```
+
+**Note:**
+Install `make`:
+
+- Windows:
+  [Install make with Chocolatey](https://community.chocolatey.org/packages/make)
+- MacOS:
+  Install make via Homebrew with `brew install make`
 
 For your information, all dependencies are updated every month.
 
