@@ -20,6 +20,10 @@
     "about_paragraph": "Welcome to our About page! We are a team of passionate individuals dedicated to creating amazing software.",
     "translation_powered_by": "Translation powered by"
   },
+  "Contact": {
+    "meta_title": "Contact",
+    "meta_description": "Contact page description"
+  },
   "Portfolio": {
     "meta_title": "Portfolio",
     "meta_description": "Welcome to my portfolio page!",
