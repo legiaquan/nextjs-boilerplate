@@ -38,7 +38,8 @@
       "@/src/templates/*": ["./src/templates/*"],
       "@/src/utils/*": ["./src/utils/*"],
       "@/src/config/*": ["./src/config/*"],
-      "@/src/public/*": ["./src/public/*"]
+      "@/src/public/*": ["./src/public/*"],
+      "@/src/services/*": ["./src/services/*"]
     },
     // Editor support
     "plugins": [
