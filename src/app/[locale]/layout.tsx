@@ -4,12 +4,13 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
+import StyledComponentsRegistry from '@/libs/registry';
+import GlobalStyle from '@/templates/GlobalStyle';
 import {
   AppConfig,
   type LocaleEnum,
   LocaleProviderAnt,
 } from '@/utils/AppConfig';
-import GlobalStyle from '@/templates/GlobalStyle';
 
 export const metadata: Metadata = {
   icons: [
@@ -58,13 +59,15 @@ export default function RootLayout({
     <html lang={locale}>
       <GlobalStyle>
         <body>
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            <AntdRegistry>
-              <ConfigProvider locale={LocaleProviderAnt(locale)}>
-                {children}
-              </ConfigProvider>
-            </AntdRegistry>
-          </NextIntlClientProvider>
+          <StyledComponentsRegistry>
+            <NextIntlClientProvider locale={locale} messages={messages}>
+              <AntdRegistry>
+                <ConfigProvider locale={LocaleProviderAnt(locale)}>
+                  {children}
+                </ConfigProvider>
+              </AntdRegistry>
+            </NextIntlClientProvider>
+          </StyledComponentsRegistry>
         </body>
       </GlobalStyle>
     </html>

@@ -40,7 +40,6 @@ export const resetCss = css`
   input,
   [tabindex] {
     outline: none;
-    border: none;
   }
 
   a {

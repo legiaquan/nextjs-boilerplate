@@ -21,6 +21,10 @@
     "about_paragraph": "私たちの「私たちについて」ページへようこそ！私たちは、素晴らしいソフトウェアを作成することに情熱を注いでいるチームです。",
     "translation_powered_by": "翻訳提供"
   },
+  "Contact": {
+    "meta_title": "Contact",
+    "meta_description": "Contact page description"
+  },
   "Portfolio": {
     "meta_title": "ポートフォリオ",
     "meta_description": "私のポートフォリオページへようこそ！",
